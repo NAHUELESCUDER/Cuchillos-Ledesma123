@@ -117,13 +117,57 @@ input, textarea {
 .item8 {
     background-image: url(img/portacuchillos.jfif);
 }
+
+.servicios {
+    display:grid;
+    height: 700px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 200px);
+    padding: 10px;
+    grid-gap: 15px;
+}
+
+.imagen{
+    border: 2px solid #000 ;
+    background-size: cover;
+    background-position: center;
+}
+
+.imagen1 {
+    background-image: url(img/forjando\ 1.jfif);
+}
+
+.imagen2{
+    background-image: url(img/forjando\ 2.jfif);
+}
+
+.imagen3 {
+    background-image: url(img/forjando\ 3.jfif);
+}
+
+.imagen4 {
+    background-image: url(img/forjando\ 4.jfif);
+}
+
+.imagen5 {
+    background-image: url(img/forjando\ 5.jfif);
+}
+
 @media only screen and (min-width:481px){
     .contenedor{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(4, 200px);
-    }
+}   
 
     .item{
+        margin-bottom: 35px;
+    }
+
+    .servicios{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .imagen{
         margin-bottom: 35px;
     }
 }
